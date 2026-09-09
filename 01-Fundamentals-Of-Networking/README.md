@@ -29,10 +29,14 @@ Networking mode:
 -ping 192.168.56.102  
 
 ## Results
+**IP Configuration Check**  
+![ip a output](screenshots/ip-a.webp)
 
-<img width="910" height="896" alt="image" src="https://github.com/user-attachments/assets/b13f9e71-3e1e-4e1f-807c-21785642d788" />
+**Ping to Clone VM**  
+![Ping to clone](screenshots/ping-to-clone.png)
 
-<img width="772" height="810" alt="image" src="https://github.com/user-attachments/assets/f1ca0ab3-13ed-4159-9b30-24f54100c429" />
+**Ping from Clone VM**  
+![Ping from clone](screenshots/ping-from-clone.png)
 
 
 
