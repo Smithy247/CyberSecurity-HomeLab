@@ -33,10 +33,10 @@ Networking mode:
 ![ip a output](screenshots/ip-a.webp)
 
 **Ping to Clone VM**  
-![Ping to clone](screenshots/ping-to-clone.png)
+![Ping to clone](screenshots/Ping-to-Clone.png)
 
 **Ping from Clone VM**  
-![Ping from clone](screenshots/ping-from-clone.png)
+![Ping from clone](screenshots/Ping-From-clone.png)
 
 
 
