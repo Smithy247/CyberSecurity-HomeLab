@@ -1,10 +1,16 @@
 # Fundamentals of Networking
 
 ##Objective
+Set up two VMs on the same isolated network in Oracle VirtualBox to test the connectivity between them and confirm they can communicate.
 
 ##Lab Setup
+Tools/Software used:
+-Oracle VirtualBox
+-Linux Mint (installed on both VMs)
 
-<img width="1279" height="888" alt="image" src="https://github.com/user-attachments/assets/a57f7e16-226a-4caa-a481-f95fac1819a7" />
+Virtual Machines:
+-VM1: Mintx64 (Test 1)
+-VM2: Mintx64 Clone (cloned from VM1)
 
 
 ##Steps
