@@ -37,13 +37,19 @@ Networking mode:
 
 
 ## Key Concepts
+-IP addressing & subnetting — I got a better understanding of how IP addresses and subnet masks work, and how two devices need to be on the same subnet to talk to each other directly.  
+-MAC addresses — I didn't realise a MAC address is basically a unique ID for a network device until I ran into the cloning issue. When both VMs had the same MAC, the network couldn't tell them apart, which is what caused the conflict in the first place.  
+-DHCP — Both VMs got their IP addresses automatically rather than me typing them in manually, which is thanks to VirtualBox's built-in DHCP server on the Host-Only network.  
+-VirtualBox networking modes — I learned there are a few different ways to network a VM (Host-Only, NAT, Bridged, Internal), and Host-Only made the most sense here since it keeps the VMs on their own private network without touching the internet or my actual home network.  
+-Ping & ICMP — Running ping sends small packets (ICMP Echo Requests) to the other machine and waits for a reply, which is how I could actually prove the two VMs were talking to each other properly.  
 
 ## Challenges/Issues
-When I cloned my VM, I ran ip a on both machines to check their network info and noticed something odd — the MAC address and IP address were exactly the same on both. VirtualBox copies the network config when you clone a VM, so both machines were showing up as the same device on the network, which meant they couldn't actually talk to each other properly and when I ran the ping command it would just appear to be talking to itself and not the other VM.  
+When I cloned my VM, I ran IP a on both machines to check their network info and noticed something odd — the MAC address and IP address were exactly the same on both. VirtualBox copies the network config when you clone a VM, so both machines were showing up as the same device on the network, which meant they couldn't actually talk to each other properly and when I ran the ping command it would just appear to be talking to itself and not the other VM.  
 
 To fix this, I went into the cloned VM's settings and generated a new MAC address, then restarted it. After that, it picked a new IP different from the original, and everything worked as expected, I could ping between the two VMs with 0% packet loss.  
 
 lesson learned: when cloning VMs for a lab like this, always double check the network settings afterward rather than assuming it's ready to go.  
 
 ## Skills Demonstrated
+VirtualBox, VM Cloning, Linux CLI, IP Addressing Subnetting, ICMP/Ping, Diagnostics, Network Troubleshooting, Host-Only Networking
 
