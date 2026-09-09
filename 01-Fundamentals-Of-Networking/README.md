@@ -1,3 +1,4 @@
+
 # Fundamentals of Networking
 
 ##Objective
@@ -12,12 +13,27 @@ Virtual Machines:
 -VM1: Mintx64 (Test 1)
 -VM2: Mintx64 Clone (cloned from VM1)
 
+Networking mode:
+-Host-Only Adapter this was chosen because it creates a private, isolated network between the host and VMs (or VM-to-VM), without exposing them to the internet or your home network.
 
 ##Steps
+1. Clone my VM so that I have two VMS for this project.
+2. Go into the settings of my cloned VM, go to network and change its mac address so that it is not the same as the original VM.
+3. I then opened the terminal on both VMS and typed the command IP a to confirm what both IP addresses are and to make sure they are not the same.
+4. Next run the ping command with the other VMS IP address, for example (ping 192.168.56.101).
+5. Confirmed successful communication between the two VMs, shown by continuous replies and 0% packet loss, then stopped the ping using Ctrl + C.
 
 ##Commands Used
+-ip a
+-ping 192.168.56.101
+-ping 192.168.56.102
 
 ##Results
+<img width="910" height="896" alt="image" src="https://github.com/user-attachments/assets/b13f9e71-3e1e-4e1f-807c-21785642d788" />
+
+<img width="772" height="810" alt="image" src="https://github.com/user-attachments/assets/f1ca0ab3-13ed-4159-9b30-24f54100c429" />
+
+
 
 ##Key Concepts
 
